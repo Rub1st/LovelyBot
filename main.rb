@@ -95,7 +95,7 @@ def bot_activity(bot, message)
     send_message_to_brother(bot, message.chat.id, message.text) if brother_conversation?(message.text)
     send_info_messages_to_arsenij(bot, message) unless brother_conversation?(message.text)
   else
-    send_message(bot, message.chat.id, 'Тебя никто не любит, пошел нахуй отсюда. Умри.')
+    send_message(bot, message.chat.id, 'Тебя никто не любит, пошел нахуй отсюда.')
   end
 end
 
